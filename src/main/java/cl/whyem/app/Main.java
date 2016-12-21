@@ -9,7 +9,6 @@ public class Main {
         RandomComponent component = DaggerRandomComponent.create();
         component.getNumericRandomGenerator().printRandomValue();
         component.getStringRandomGenerator().printRandomValue();
-
         String randomFromComponent = component.getStringRandomGenerator().getRandomValue();
         System.out.println("Aleatorio obtenido desde 'Generator', mediante 'Component' => " + randomFromComponent);
     }
